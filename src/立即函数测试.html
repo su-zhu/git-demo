@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" id="btn" value="瞎点">
+
+<script>
+    var btn = document.getElementById('btn');
+    btn.onclick = function() {
+        console.log(111);
+    }(function() {console.log(2222);})
+
+    ();
+</script>
+</body>
+</html>
